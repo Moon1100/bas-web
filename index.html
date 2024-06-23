@@ -4,22 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SPBA: Penyedia solusi pengurusan bas asrama untuk sekolah dan institusi. Gunakan sistem kami untuk mengurus proses perjalanan dan pembayaran dengan efisien.">
+    <meta name="description"
+        content="SPBA: Penyedia solusi pengurusan bas asrama untuk sekolah dan institusi. Gunakan sistem kami untuk mengurus proses perjalanan dan pembayaran dengan efisien.">
     <meta name="keywords" content="SPBA, pengurusan bas, asrama, sistem, teknologi, automasi, solusi perniagaan">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="SPBA | Sistem Pengurusan Bas Asrama">
-    <meta property="og:description" content="SPBA: Penyedia solusi pengurusan bas asrama untuk sekolah dan institusi. Gunakan sistem kami untuk mengurus proses perjalanan dan pembayaran dengan efisien.">
+    <meta property="og:description"
+        content="SPBA: Penyedia solusi pengurusan bas asrama untuk sekolah dan institusi. Gunakan sistem kami untuk mengurus proses perjalanan dan pembayaran dengan efisien.">
     <meta property="og:image" content="./assets/icon.jpeg">
     <meta property="og:url" content="https://spba.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="/assets/icon.jpeg">
     <meta name="twitter:title" content="SPBA: Sistem Pengurusan Bas Asrama">
-    <meta name="twitter:description" content="SPBA: Penyedia solusi pengurusan bas asrama untuk sekolah dan institusi. Gunakan sistem kami untuk mengurus proses perjalanan dan pembayaran dengan efisien.">
+    <meta name="twitter:description"
+        content="SPBA: Penyedia solusi pengurusan bas asrama untuk sekolah dan institusi. Gunakan sistem kami untuk mengurus proses perjalanan dan pembayaran dengan efisien.">
     <meta name="twitter:image" content="./assets/icon.jpeg">
     <link rel="icon" href="./assets/icon.jpeg" type="image/png">
-    
+
     <title>SPBA | Sistem Pengurusan Bas Asrama</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.scroll-element');
+
+            function handleScroll() {
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const viewportHeight = window.innerHeight;
+
+                    if (elementTop < viewportHeight - 50) {
+                        element.classList.add('opacity-100');
+                        element.classList.remove('opacity-0');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+
+            // Trigger the scroll event once to check the initial position
+            handleScroll();
+        });</script>
     <!-- Alpine Plugins -->
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <!-- <link rel="icon" href="/assets/icon.png" type="image/png"> -->
@@ -37,8 +60,10 @@
                 class="container mx-auto px-3 py-1.5 flex flex-row items-center justify-between lg:border-none border-b">
                 <!-- logo -->
                 <div class="flex flex-col items-center justify-center nav_logo">
-                    <h2 class="text-xl text-gray-900 uppercase font-semibold tracking-widest">SPBA</h2>
-                    <span class="text-xs text-gray-800">Sistem Pengurusan Bas Asrama</span>
+                    <h2 class="text-xl text-gray-900 uppercase font-semibold tracking-widest opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">SPBA</h2>
+                    <span class="text-xs text-gray-800 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Sistem Pengurusan Bas Asrama</span>
+
+
                 </div>
                 <!-- nav menu -->
                 <div class="lg:block hidden nav_items">
@@ -86,7 +111,9 @@
                         </svg>
                     </a> -->
 
-                    <a aria-label="Chat on WhatsApp" href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama"> <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
+                    <a aria-label="Chat on WhatsApp" class="opacity-0 transition-opacity duration-1000 ease-in-out scroll-element"
+                        href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama">
+                        <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
                     </a>
                 </div>
 
@@ -123,7 +150,7 @@
                             </a>
                         </li>
                         <li> -->
-                            <!-- <button class="focus:outline-none text-gray-700 text-sm capitalize flex items-center">
+                        <!-- <button class="focus:outline-none text-gray-700 text-sm capitalize flex items-center">
                                 Hubungi Sekarang <svg class="w-4 h-4 text-gray-500 ml-2" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -132,8 +159,10 @@
                                 </svg>
                             </button> -->
 
-                            <a aria-label="Chat on WhatsApp" href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama"> <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
-                            </a>
+                        <a aria-label="Chat on WhatsApp"
+                            href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama">
+                            <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
+                        </a>
                         </li>
                     </ul>
                 </main>
@@ -152,19 +181,26 @@
                                     aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div> -->
-                    <h1 class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">Permudahkan
+                    <h1 class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl opacity-0 transition-opacity duration-500 ease-in-out scroll-element"
+                        >Permudahkan
                         Sistem Bas Asrama Anda </h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-600">perkhidmatan pengurusan bas yang lengkap dengan
+                    <p class="mt-6 text-lg leading-8 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element"
+                        >perkhidmatan pengurusan bas yang lengkap dengan
                         integrasi gerbang pembayaran untuk memudahkan ibu bapa membuat pembayaran, serta papan pemuka
                         admin untuk memantau dan mengeksport perjalanan pelajar dan jumlah bayaran mereka.</p>
                     <div class="mt-10 flex items-center gap-x-6">
                         <!-- <a href="#"
                             class="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">
                         Hubungi Sekarang</a> -->
-                        <a aria-label="Chat on WhatsApp" href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama"> <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
+                        <a aria-label="Chat on WhatsApp" class="opacity-0 transition-opacity duration-1000 ease-in-out scroll-element"
+                            
+                            href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama">
+                            <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
                         </a>
-                        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Maklumat Lanjut <span
-                                aria-hidden="true">→</span></a>
+                        <a href="#"
+                            class="text-sm font-semibold leading-6 text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element"
+                            >Maklumat Lanjut <span aria-hidden="true">→</span></a>
+
                     </div>
                 </div>
             </div>
@@ -181,26 +217,26 @@
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl sm:text-center">
                     <!-- <h2 class="text-base font-semibold leading-7 text-green-400">Sistem yang di bangun secara khas </h2> -->
-                    <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Perkhidmatan Kami</p>
-                    <p class="mt-6 text-lg leading-8 text-gray-300">Kami menyediakan sistem pengurusan bas yang merangkumi:
+                    <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Perkhidmatan Kami</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-300 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Kami menyediakan sistem pengurusan bas yang
+                        merangkumi:
 
                     </p>
                 </div>
             </div>
             <div class="relative overflow-hidden pt-16">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    <img src="./assets/Screenshot.png"
-                        alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432"
-                        height="1442">
+                    <img src="./assets/Screenshot.png" alt="App screenshot"
+                        class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442">
                     <div class="relative" aria-hidden="true">
                         <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-neutral-700 pt-[7%]"></div>
                     </div>
                 </div>
             </div>
-            <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+            <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8 ">
                 <dl
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-                    <div class="relative pl-9">
+                    <div class="relative pl-9 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                         <dt class="inline font-semibold text-white">
                             <svg class="absolute left-1 top-1 h-5 w-5 text-green-500" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -212,7 +248,7 @@
                         </dt>
                         <dd class="inline">Daftar maklumat pelajar dengan mudah.</dd>
                     </div>
-                    <div class="relative pl-9">
+                    <div class="relative pl-9 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                         <dt class="inline font-semibold text-white">
                             <svg class="absolute left-1 top-1 h-5 w-5 text-green-500" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -224,7 +260,7 @@
                         </dt>
                         <dd class="inline"> Lihat maklumat pelajar yang telah didaftarkan dan status pembayaran</dd>
                     </div>
-                    <div class="relative pl-9">
+                    <div class="relative pl-9 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                         <dt class="inline font-semibold text-white">
                             <svg class="absolute left-1 top-1 h-5 w-5 text-green-500" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -234,9 +270,10 @@
                             </svg>
                             Admin
                         </dt>
-                        <dd class="inline">Pantau senarai pelajar, tapis mengikut status pembayaran, laluan, arah, destinasi, dan status pendaftaran.</dd>
+                        <dd class="inline">Pantau senarai pelajar, tapis mengikut status pembayaran, laluan, arah,
+                            destinasi, dan status pendaftaran.</dd>
                     </div>
-                    <div class="relative pl-9">
+                    <div class="relative pl-9 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                         <dt class="inline font-semibold text-white">
                             <svg class="absolute left-1 top-1 h-5 w-5 text-green-500" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -246,9 +283,10 @@
                             </svg>
                             Integrasi Gerbang Pembayaran
                         </dt>
-                        <dd class="inline">Buat pembayaran terus secara online bagi memudahkan pengurusan kewangan dan ketelusan transaksi</dd>
+                        <dd class="inline">Buat pembayaran terus secara online bagi memudahkan pengurusan kewangan dan
+                            ketelusan transaksi</dd>
                     </div>
-                    <div class="relative pl-9">
+                    <div class="relative pl-9 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                         <dt class="inline font-semibold text-white">
                             <svg class="absolute left-1 top-1 h-5 w-5 text-green-500" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -258,9 +296,10 @@
                             </svg>
                             Reka Bentuk Responsif
                         </dt>
-                        <dd class="inline">Laman web boleh diakses dan digunakan pada pelbagai peranti dan saiz skrin.</dd>
+                        <dd class="inline">Laman web boleh diakses dan digunakan pada pelbagai peranti dan saiz skrin.
+                        </dd>
                     </div>
-                    <div class="relative pl-9">
+                    <div class="relative pl-9 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
                         <dt class="inline font-semibold text-white">
                             <svg class="absolute left-1 top-1 h-5 w-5 text-green-500" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -272,7 +311,8 @@
                             </svg>
                             Keselamatan dan Privasi
                         </dt>
-                        <dd class="inline">Data pengguna disimpan dan disulitkan dengan selamat. Pelajar yang telah mendaftar akan dipadamkan dari sistem selepas 3 bulan dari perjalanan terakhir.</dd>
+                        <dd class="inline">Data pengguna disimpan dan disulitkan dengan selamat. Pelajar yang telah
+                            mendaftar akan dipadamkan dari sistem selepas 3 bulan dari perjalanan terakhir.</dd>
                     </div>
                 </dl>
             </div>
@@ -284,69 +324,91 @@
     <section>
         <div class="bg-white py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-              <div class="mx-auto max-w-2xl sm:text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Pembangunan System Tersuai Dengan Keperluan Anda</h2>
-                <p class="mt-6 text-lg leading-8 text-gray-600">Sistem kami direka untuk memudahkan pengurusan bas hostel anda secara menyeluruh..</p>
-              </div>
-              <div class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                <div class="p-8 sm:p-10 lg:flex-auto">
-                  <h3 class="text-2xl font-bold tracking-tight text-gray-900">Hubungi Kami</h3>
-                  <p class="mt-6 text-base leading-7 text-gray-600">Hubungi kami untuk perbincangan lanjut mengenai harga yang sesuai dengan bajet anda.
-
-                  </p>
-                  <div class="mt-10 flex items-center gap-x-4">
-                    <h4 class="flex-none text-sm font-semibold leading-6 text-green-600">What’s included</h4>
-                    <div class="h-px flex-auto bg-gray-100"></div>
-                  </div>
-                  <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-                    <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                      </svg>
-                      Akses Papan Pemuka Admin
-                    </li>
-                    <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                      </svg>
-                      Penyelenggaraan dan Kemaskini
-                    </li>
-                    <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                      </svg>
-                      Integrasi Gerbang Pembayaran
-                    </li>
-                    <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
-                      </svg>
-                      Fungsi Eksport Data
-                    </li>
-                  </ul>
+                <div class="mx-auto max-w-2xl sm:text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Pembangunan System Tersuai
+                        Dengan Keperluan Anda</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Sistem kami direka untuk memudahkan pengurusan bas
+                        hostel anda secara menyeluruh..</p>
                 </div>
-                <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                  <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-                    <div class="mx-auto max-w-xs px-8">
-                      <p class="text-base font-semibold text-gray-600">Dapatkan Sebut Harga</p>
-                      <p class="mt-6 flex items-baseline justify-center gap-x-2">
-                        <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600">RM</span>
+                <div
+                    class="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+                    <div class="p-8 sm:p-10 lg:flex-auto">
 
-                        <span class="text-5xl font-bold tracking-tight text-gray-900">FREE</span>
-                      </p>
-                      <!-- <a href="#" class="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Hubungi Sekarang</a> -->
-                      <a aria-label="Chat on WhatsApp" class="mt-10 block w-full flex justify-center" href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama"> <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
-                      </a>
-                      <p class="mt-6 text-xs leading-5 text-gray-600">Invois dan resit disediakan untuk kemudahan tuntutan syarikat.
+                        <h3 class="text-2xl font-bold tracking-tight text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Hubungi Kami</h3>
+                        <p class="mt-6 text-base leading-7 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Hubungi kami untuk perbincangan lanjut
+                            mengenai harga yang sesuai dengan bajet anda.
 
-                      </p>
+                        </p>
+                        <div class="mt-10 flex items-center gap-x-4">
+                            <h4 class="flex-none text-sm font-semibold leading-6 text-green-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Apa yang kami sertakan</h4>
+                            <div class="h-px flex-auto bg-gray-100"></div>
+                        </div>
+                        <ul role="list"
+                            class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                            <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+                                <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Akses Papan Pemuka Admin
+                            </li>
+                            <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+                                <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Penyelenggaraan dan Kemaskini
+                            </li>
+                            <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+                                <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Integrasi Gerbang Pembayaran
+                            </li>
+                            <li class="flex gap-x-3 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">
+                                <svg class="h-6 w-5 flex-none text-green-600" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                Fungsi Eksport Data
+                            </li>
+                        </ul>
                     </div>
-                  </div>
+                    <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                        <div
+                            class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                            <div class="mx-auto max-w-xs px-8">
+                                <p class="text-base font-semibold text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Dapatkan Sebut Harga</p>
+                                <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                                    <span class="text-sm font-semibold leading-6 tracking-wide text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">RM</span>
+
+                                    <span class="text-5xl font-bold tracking-tight text-gray-900 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">FREE</span>
+                                </p>
+                                <!-- <a href="#" class="mt-10 block w-full rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Hubungi Sekarang</a> -->
+                                <a aria-label="Chat on WhatsApp" class="mt-10 block w-full flex justify-center opacity-0 transition-opacity duration-1000 ease-in-out scroll-element"
+                                    href="https://wa.me/60192892305?text=Saya%20ingin%20mendapatkan%20sebutharga%20untuk%20system%20bas%20asrama">
+                                    <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg" />
+                                </a>
+                                <p class="mt-6 text-xs leading-5 text-gray-600 opacity-0 transition-opacity duration-1000 ease-in-out scroll-element">Invois dan resit disediakan untuk
+                                    kemudahan tuntutan syarikat.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          
+        </div>
+
     </section>
 
 
